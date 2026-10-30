@@ -175,11 +175,11 @@ Displays the current date and time generated using JavaScript's `new Date()` met
 <img width="1917" height="1078" alt="Lab-01 time" src="https://github.com/user-attachments/assets/718aea85-a2f0-456b-bf23-dc4174601708" />
 
 
-### 7.4 Unknown Route
+### 7.4 Unknown Route Or Test Route
 
 Displays the 404 error message when an undefined route is accessed.
 
-<img width="1533" height="817" alt="Lab-01 unknown" src="https://github.com/user-attachments/assets/67322172-566f-4bc0-9cbe-619a069fda86" />
+<img width="1917" height="1078" alt="Lab-01 test" src="https://github.com/user-attachments/assets/c5171075-d76d-4c78-97ae-1eb122da3791" />
 
 
 ## 8. Understanding package.json and node_modules
