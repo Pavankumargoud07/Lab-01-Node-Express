@@ -165,19 +165,22 @@ Displays the welcome message returned by the Express server.
 
 Displays the student's name and section in JSON format.
 
-![About Route](screenshots/about.png)
+<img width="1917" height="1078" alt="Lab-01 about" src="https://github.com/user-attachments/assets/31c660d5-7e36-467b-8436-0e3d9c6f14f7" />
+
 
 ### 7.3 Time Route
 
 Displays the current date and time generated using JavaScript's `new Date()` method.
 
-![Time Route](screenshots/time.png)
+<img width="1917" height="1078" alt="Lab-01 time" src="https://github.com/user-attachments/assets/718aea85-a2f0-456b-bf23-dc4174601708" />
+
 
 ### 7.4 Unknown Route
 
 Displays the 404 error message when an undefined route is accessed.
 
-![404 Not Found](screenshots/not-found.png)
+<img width="1533" height="817" alt="Lab-01 unknown" src="https://github.com/user-attachments/assets/67322172-566f-4bc0-9cbe-619a069fda86" />
+
 
 ## 8. Understanding package.json and node_modules
 
