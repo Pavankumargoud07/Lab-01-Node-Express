@@ -158,7 +158,8 @@ The following screenshots demonstrate the responses received while testing the d
 
 Displays the welcome message returned by the Express server.
 
-![Home Route](screenshots/home.png)
+<img width="1917" height="1078" alt="Lab-01 Home" src="https://github.com/user-attachments/assets/f5795192-9a6b-4184-a3f2-051e8d79cbc1" />
+
 
 ### 7.2 About Route
 
