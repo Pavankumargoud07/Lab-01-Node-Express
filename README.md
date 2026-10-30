@@ -4,8 +4,7 @@
 **Registration Number:** [Your Registration Number]  
 **Section:** [Your Section]  
 **Course:** Backend Development Fundamentals  
-**Institution:** NIAT × Aurora  
-**Faculty:** Joel Prashanth D
+
 
 ## Deployment Link
 
