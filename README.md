@@ -9,8 +9,6 @@
 
 **Live Application (Render):** https://lab-01-node-express-u62f.onrender.com
 
-**GitHub Repository:** https://github.com/Pavankumargoud07/Lab-01-Node-Express
-
 The Express application has been deployed using Render and is accessible through the public deployment URL.
 
 ## 1. Aim
@@ -210,12 +208,3 @@ By completing this lab, I learned how to:
 Through this lab, I gained practical experience in creating web servers using Node.js and Express.js. I learned how to define routes, send different types of responses, and handle requests to undefined URLs. Testing the endpoints helped me understand how HTTP status codes indicate the results of client requests.
 
 Deploying the application on Render also provided practical experience in making a backend application accessible through a public URL. Overall, this lab helped me develop a foundation in backend development, server-side programming, and application deployment.
-
-## 11. Submission Notes
-
-- The project source code and endpoint screenshots are included in the GitHub repository.
-- The `node_modules/` directory and environment files are excluded from version control.
-- The README file contains the project description, setup instructions, API endpoints, and deployment information.
-- The live application is deployed using Render.
-- The GitHub repository link and deployment URL are included above for reference.
-- The repository link will be submitted through the ERP portal and the faculty's designated GitHub submission form, as required.
