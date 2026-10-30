@@ -1,45 +1,54 @@
 # Lab 01: Node.js and Express Server
 
-**Student Name:**eesam Pavan Kumar Goud  
-**Registration Number:** [Your Registration Number]  
-**Section:** [Your Section]  
+**Student Name:**Eesam Pavan Kumar Goud  
+**Registration Number:** 252U1R5041  
+**Section:** 106 AIDE-S10
 **Course:** Backend Development Fundamentals  
 
+## Deployment and Repository Links
 
-## Deployment Link
+**Live Application (Render):** https://lab-01-node-express-u62f.onrender.com
 
-**Live Application:** [Add your public deployment URL here]
+**GitHub Repository:** [PASTE YOUR ACTUAL GITHUB REPOSITORY URL HERE]
 
-*If deployment is not possible, follow the alternative submission instructions provided by the faculty.*
+The Express application has been deployed using Render and is accessible through the public deployment URL.
 
 ## 1. Aim
 
-To create a basic web server using Node.js and learn how to build and manage routes using Express.js.
+To create a basic web server using Node.js and learn how to build, manage, and test routes using Express.js.
 
 ## 2. Introduction
 
-Node.js is a JavaScript runtime that allows us to execute JavaScript outside the browser. It provides built-in modules, such as `http`, which can be used to create a web server. Express.js is a framework built for Node.js that makes it easier to create web applications and handle HTTP requests.
+Node.js is a JavaScript runtime environment that allows JavaScript code to execute outside a web browser. It provides built-in modules, such as the `http` module, which can be used to create web servers.
 
-In this lab, I created a basic server using Node.js and then developed an Express server with different routes. I implemented a welcome page, a route that returns student details in JSON format, a route that displays the current date and time, and a 404 response for unknown routes.
+Express.js is a web framework built on Node.js that simplifies server development, routing, and HTTP request handling.
 
-## 3. Technologies Used
+In this lab, I first created a basic HTTP server using Node.js. Then, I developed an Express application with multiple routes. These routes display a welcome message, return student details in JSON format, provide the current date and time, and handle requests to undefined routes using a 404 response.
 
-- **Node.js:** Used to run JavaScript on the server.
-- **Express.js:** Used to create the server and define routes.
-- **JavaScript:** Used to implement the server logic.
-- **npm:** Used to initialize the project and install dependencies.
+Finally, I deployed the Express application using Render to make it accessible through a public URL.
+
+## 3. Technologies and Tools Used
+
+- **Node.js:** Used to execute JavaScript code on the server.
+- **Express.js:** Used to create the web server and define application routes.
+- **JavaScript:** Used to implement the server-side logic.
+- **npm:** Used to initialize the project and manage dependencies.
 - **Visual Studio Code:** Used to write and manage the source code.
+- **GitHub:** Used to store and manage the project source code.
+- **Render:** Used to deploy the Express application and make it publicly accessible.
 
 ## 4. Project Structure
 
 ```text
 Lab-01-Node-Express/
+│
 ├── basic-server.js
 ├── server.js
 ├── package.json
 ├── package-lock.json
 ├── .gitignore
 ├── README.md
+│
 └── screenshots/
     ├── home.png
     ├── about.png
@@ -47,23 +56,25 @@ Lab-01-Node-Express/
     └── not-found.png
 ```
 
-**File descriptions:**
+### File Descriptions
 
-- `basic-server.js` – Contains the basic HTTP server using Node.js.
-- `server.js` – Contains the Express server and its routes.
+- `basic-server.js` – Contains the basic HTTP server created using Node.js.
+- `server.js` – Contains the Express application and its route definitions.
 - `package.json` – Stores project information, scripts, and dependencies.
-- `package-lock.json` – Records the installed dependency versions.
-- `.gitignore` – Specifies files and folders that should not be uploaded to GitHub.
-- `screenshots/` – Stores screenshots of the tested endpoints.
+- `package-lock.json` – Records the resolved versions of installed dependencies.
+- `.gitignore` – Specifies files and folders that should not be tracked by Git.
+- `README.md` – Contains the project documentation and execution instructions.
+- `screenshots/` – Stores screenshots of the tested application endpoints.
 
-The `node_modules/` directory contains installed packages. It is excluded from GitHub because the dependencies can be installed again using `npm install`.
+The `node_modules/` directory contains the installed packages required by the application. It is excluded from GitHub because the dependencies can be installed again using `npm install`.
 
 ## 5. Installation and Execution
 
 ### Prerequisites
 
-- Node.js and npm must be installed.
-- A code editor, such as Visual Studio Code, is recommended.
+- Node.js must be installed.
+- npm must be available.
+- Visual Studio Code or another code editor is recommended.
 
 ### Step 1: Clone the Repository
 
@@ -71,10 +82,10 @@ The `node_modules/` directory contains installed packages. It is excluded from G
 git clone YOUR_GITHUB_REPOSITORY_URL
 ```
 
-### Step 2: Open the Project Directory
+### Step 2: Navigate to the Project Directory
 
 ```bash
-cd YOUR_REPOSITORY_NAME
+cd Lab-01-Node-Express
 ```
 
 ### Step 3: Install Dependencies
@@ -93,34 +104,55 @@ Open the following address in your browser:
 
 `http://localhost:3000`
 
-The server displays a welcome message. Stop the server by pressing `Ctrl + C` in the terminal before starting the Express server.
+The browser displays the welcome message returned by the basic Node.js server.
+
+Stop the server by pressing `Ctrl + C` in the terminal before starting the Express server.
 
 ### Step 5: Run the Express Server
+
+```bash
+npm start
+```
+
+Alternatively, run:
 
 ```bash
 node server.js
 ```
 
-Open `http://localhost:3000` in your browser and test the endpoints listed below.
+The Express server starts on port 3000 by default.
 
-Keep the terminal running while testing the application.
+Open the following address in your browser:
+
+`http://localhost:3000`
+
+Keep the terminal running while testing the application routes.
 
 ## 6. API Endpoints
 
-The Express application contains the following routes:
+The Express application contains the following GET routes:
 
-| HTTP Method | Endpoint | Purpose | Expected Status |
+| HTTP Method | Endpoint | Description | Expected Status |
 |---|---|---|---|
 | GET | `/` | Displays a welcome message. | 200 OK |
-| GET | `/about` | Returns the student's name and section as JSON. | 200 OK |
+| GET | `/about` | Returns the student's name and section in JSON format. | 200 OK |
 | GET | `/time` | Returns the current date and time. | 200 OK |
-| GET | `/test` | Demonstrates handling of an unknown route. | 404 Not Found |
+| GET | `/test` | Demonstrates handling of an undefined route. | 404 Not Found |
 
 The application also returns a 404 response for other undefined routes.
 
+### Live Endpoint URLs
+
+Replace `https://lab-01-node-express-u62f.onrender.com` with your actual Render deployment address.
+
+- Home: `https://lab-01-node-express-u62f.onrender.com`
+- About: `https://lab-01-node-express-u62f.onrender.com/about`
+- Time: `https://lab-01-node-express-u62f.onrender.com/time`
+- Not Found: `https://lab-01-node-express-u62f.onrender.com/test`
+
 ## 7. Screenshots and Testing Results
 
-The following screenshots show the responses received while testing the application in the browser.
+The following screenshots demonstrate the responses received while testing the deployed Express application through its public Render URL.
 
 ### 7.1 Home Route
 
@@ -136,7 +168,7 @@ Displays the student's name and section in JSON format.
 
 ### 7.3 Time Route
 
-Displays the current date and time generated using JavaScript's `new Date()`.
+Displays the current date and time generated using JavaScript's `new Date()` method.
 
 ![Time Route](screenshots/time.png)
 
@@ -148,33 +180,38 @@ Displays the 404 error message when an undefined route is accessed.
 
 ## 8. Understanding package.json and node_modules
 
-**package.json:** Contains details about the project, including its name, version, scripts, and dependencies.
+**package.json:** Contains project information, including the project name, version, scripts, and dependencies. It also defines the command used to start the Express server.
 
-**package-lock.json:** Stores the exact resolved versions of installed dependencies to help maintain consistent installations.
+**package-lock.json:** Records the resolved versions of installed dependencies to help maintain consistent installations.
 
-**node_modules:** Contains Express.js and other installed packages required to run the application. This folder is not included in the GitHub repository because it can be recreated using `npm install`.
+**node_modules:** Contains Express.js and other installed packages required to run the application. This directory is excluded from the GitHub repository because the dependencies can be recreated using `npm install`.
 
 ## 9. Learning Outcomes
 
 By completing this lab, I learned how to:
 
 - Initialize a Node.js project using `npm init -y`.
-- Install Express.js and manage project dependencies using npm.
-- Create a server using the built-in Node.js `http` module.
+- Install Express.js and manage dependencies using npm.
+- Create a basic server using the built-in Node.js `http` module.
 - Build an Express application and define GET routes.
-- Send text and JSON responses to client requests.
-- Generate the current date and time using `new Date()`.
-- Handle unknown routes using HTTP status code 404.
+- Handle HTTP requests and send text and JSON responses.
+- Generate the current date and time using JavaScript's `new Date()` method.
+- Handle undefined routes using the HTTP status code 404.
 - Test server responses through a web browser.
+- Deploy a Node.js and Express application using Render.
+- Store and manage project files using GitHub.
 
 ## 10. Conclusion
 
-Through this lab, I gained practical experience in creating web servers using Node.js and Express.js. I learned how to define routes, return different types of responses, and handle invalid URLs. Testing the endpoints helped me understand how HTTP status codes indicate whether a request was successful or unsuccessful. This lab provided a foundation for learning backend development.
+Through this lab, I gained practical experience in creating web servers using Node.js and Express.js. I learned how to define routes, send different types of responses, and handle requests to undefined URLs. Testing the endpoints helped me understand how HTTP status codes indicate the results of client requests.
+
+Deploying the application on Render also provided practical experience in making a backend application accessible through a public URL. Overall, this lab helped me develop a foundation in backend development, server-side programming, and application deployment.
 
 ## 11. Submission Notes
 
-- The source code and endpoint screenshots are included in the project repository.
+- The project source code and endpoint screenshots are included in the GitHub repository.
 - The `node_modules/` directory and environment files are excluded from version control.
-- The GitHub repository link will be included in the lab report submitted through the ERP portal.
-- The repository link will also be submitted through the faculty's designated GitHub submission form.
-- The deployment URL or the alternative specified by the faculty will be provided before final submission.
+- The README file contains the project description, setup instructions, API endpoints, and deployment information.
+- The live application is deployed using Render.
+- The GitHub repository link and deployment URL are included above for reference.
+- The repository link will be submitted through the ERP portal and the faculty's designated GitHub submission form, as required.
