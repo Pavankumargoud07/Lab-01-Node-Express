@@ -9,7 +9,7 @@
 
 **Live Application (Render):** https://lab-01-node-express-u62f.onrender.com
 
-**GitHub Repository:** [PASTE YOUR ACTUAL GITHUB REPOSITORY URL HERE]
+**GitHub Repository:** https://github.com/Pavankumargoud07/Lab-01-Node-Express
 
 The Express application has been deployed using Render and is accessible through the public deployment URL.
 
